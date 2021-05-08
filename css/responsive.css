@@ -1,0 +1,96 @@
+    @media (max-width: 355px){
+        .container-sections .row{
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+        }
+       .bem-vindo .container{
+            text-align: center;
+        }
+        .bem-vindo .veja{
+            text-align: center;
+        }
+    } 
+
+    @media(max-width: 515px){
+        .row{
+            justify-content: center;
+            display: block;
+            margin: auto;
+        }
+        
+    }
+    @media(max-width: 856px){
+       .row{
+           /* align-items: center;
+            justify-content: center;*/
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 15px;
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width: 630px){
+        nav{
+            display: none;
+        }
+        .one, .two, .three{
+            background-color: #fff;
+            height: 5px;
+            width: 100%;
+            margin: 6px auto;
+    
+            transition-duration: 0.4s;
+        }
+        .menu-toggle{
+            width: 40px;
+            height: 30px;
+            margin-right: 20px;
+        }
+    
+        /* quando clicar no menu lateral */
+        .menu.on{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            z-index: 10;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu.on nav{
+            display: block;
+        }
+        .menu.on .menu-toggle{
+            position: absolute;
+            right: 30px;
+            top: 15px;
+        }
+    
+        /* transformando as tres barrinhas em um x*/
+        .menu.on .menu-toggle .one{
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+        .menu.on .menu-toggle .two{
+            opacity: 0; /* escondendo a segunda barra */
+        }
+        .menu.on .menu-toggle .three{
+            transform: rotate(-45deg) translate(8px, -9px);
+        }
+        .menu.on nav ul{
+            text-align: center;
+            display: block;
+        }
+        .menu.on nav ul a{
+            transition-duration: 0.6s;
+            font-size: 3rem;
+            line-height: 4rem;
+            display: block;
+        }
+    }
