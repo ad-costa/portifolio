@@ -19,8 +19,8 @@
   ";
   
   //Emails para quem será enviado o formulário
-  $destino = "ad.gt@hotmail.com";
-  $subject = "Contato pelo Site";
+  $destino = "ad.denden10@gmail.com";
+  $subject = "Contato Portifólio";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
   $headers  = "MIME-Version: 1.0\n";

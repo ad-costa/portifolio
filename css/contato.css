@@ -81,6 +81,19 @@
     font-weight: bolder;
 }
 
+
+/* validação de campo do formulário */
+    input:invalid, textarea:invalid{
+        border: 1px solid red;
+    }
+    input:valid, textarea:valid{
+        border: 1px solid green;
+    }
+    input:focus, textarea:focus{
+        border: 1px solid rgb(15, 142, 216) !important;
+    }
+/* fim da validação de campo*/
+
 .links{
     width: 50%;
     margin: auto;
